@@ -1,0 +1,9 @@
+version: '2.4'
+services:
+  iris:
+    build: .
+    restart: always
+    ports:
+      - 52775:52773
+    volumes:
+      - ./src:/usr/src
